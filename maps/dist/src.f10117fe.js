@@ -22864,6 +22864,7 @@ exports.User = void 0;
 var faker_1 = require("@faker-js/faker");
 var User = /** @class */function () {
   function User() {
+    this.color = "red";
     this.name = faker_1.faker.name.firstName();
     this.location = {
       lat: parseFloat(faker_1.faker.address.latitude()),
@@ -22887,6 +22888,7 @@ exports.Company = void 0;
 var faker_1 = require("@faker-js/faker");
 var Company = /** @class */function () {
   function Company() {
+    this.color = "blue";
     this.companyName = faker_1.faker.company.name();
     this.catchPhrase = faker_1.faker.company.catchPhrase();
     this.location = {
